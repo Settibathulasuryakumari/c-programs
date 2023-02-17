@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+{
+int i,k,n,evensum=0,oddsum=0;
+printf("enter a number upto which we want to find factors:");
+scanf("%d",&n);
+printf("enter a dividing number:");
+scanf("%d",&k);
+for(i=1;i<=n;i++)
+{
+for(i=1;(i%k==0);i++)
+{
+printf("%d\t",i);
+if(i%2==0)
+{
+evensum=evensum+i;
+}
+else
+oddsum=oddsum+i;
+}
+printf("even-sum=%d,odd-sum=%d",evensum,oddsum);
+}
+}
